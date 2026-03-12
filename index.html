@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta para Minha Irmã</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      font-family: "Georgia", "Times New Roman", serif;
+      background: linear-gradient(135deg, #1d2233, #2b2f45);
+    }
+
+    .carta {
+      width: 900px;
+      max-width: 100%;
+      min-height: 650px;
+      padding: 60px 70px;
+      color: #2d2418;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.18) 0%, transparent 25%),
+        radial-gradient(circle at 80% 30%, rgba(255,255,255,0.12) 0%, transparent 20%),
+        radial-gradient(circle at 30% 80%, rgba(120,90,40,0.08) 0%, transparent 25%),
+        radial-gradient(circle at 70% 75%, rgba(90,60,20,0.08) 0%, transparent 20%),
+        repeating-radial-gradient(circle at center, rgba(80, 55, 20, 0.025) 0 1px, transparent 1px 3px),
+        linear-gradient(180deg, #efe2bf 0%, #e7d4aa 100%);
+      border: 1px solid rgba(90, 60, 20, 0.25);
+      box-shadow:
+        0 20px 50px rgba(0,0,0,0.35),
+        inset 0 0 60px rgba(120, 80, 30, 0.12),
+        inset 0 0 8px rgba(255,255,255,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          0deg,
+          rgba(255,255,255,0.03) 0px,
+          rgba(255,255,255,0.03) 1px,
+          transparent 1px,
+          transparent 4px
+        );
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    .carta::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle, transparent 55%, rgba(80, 45, 10, 0.15) 100%);
+      pointer-events: none;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3.6rem;
+      font-weight: normal;
+      margin-bottom: 70px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .data {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .destinataria {
+      font-size: 1.3rem;
+      margin-bottom: 45px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .conteudo {
+      font-size: 1.65rem;
+      line-height: 1.8;
+      text-align: justify;
+      text-indent: 60px;
+      max-width: 760px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .assinatura {
+      margin-top: 70px;
+      text-align: right;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      .carta {
+        padding: 35px 25px;
+      }
+
+      h1 {
+        font-size: 2.4rem;
+        margin-bottom: 40px;
+      }
+
+      .conteudo {
+        font-size: 1.2rem;
+        text-indent: 30px;
+      }
+
+      .assinatura {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="carta">
+    <h1>Carta para Minha Irmã</h1>
+
+    <p class="data">Tijucas, 12 de março de 2026.</p>
+
+    <p class="destinataria">À minha irmã mais velha,</p>
+
+    <p class="conteudo">
+      Escrevo esta carta para dizer o quanto você é importante para mim.
+      Sua força, sua presença e a forma como sempre esteve ao meu lado fizeram
+      diferença em muitos momentos da minha vida. Você não é apenas uma irmã,
+      mas também uma referência de amor. 
+    </p>
+
+    <div class="assinatura">
+      <p>Com carinho,</p>
+      <p>Seu irmão</p>
+    </div>
+  </main>
+</body>
+</html>
